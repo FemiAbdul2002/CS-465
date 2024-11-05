@@ -1,5 +1,6 @@
 const express = require('express');
-const path = require('path'); // Import path for directory configuration
+const path = require('path');
+const trips = require('./data/trips.json');
 const app = express();
 
 // Set up Handlebars (HBS) as the templating engine

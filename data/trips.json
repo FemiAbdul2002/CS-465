@@ -1,0 +1,40 @@
+{
+    "trips": [
+      {
+        "id": 1,
+        "destination": "Hawaii",
+        "date": "2025-06-15",
+        "description": "A beautiful getaway to Hawaii.",
+        "price": "$1500"
+      },
+      {
+        "id": 2,
+        "destination": "Paris",
+        "date": "2025-07-20",
+        "description": "Explore the city of love.",
+        "price": "$1800"
+      },
+      {
+        "id": 3,
+        "destination": "Tokyo",
+        "date": "2025-08-10",
+        "description": "Experience the vibrant culture of Tokyo.",
+        "price": "$2000"
+      },
+      {
+        "id": 4,
+        "destination": "Sydney",
+        "date": "2025-09-15",
+        "description": "Discover the iconic Sydney Opera House.",
+        "price": "$2200"
+      },
+      {
+        "id": 5,
+        "destination": "Rome",
+        "date": "2025-10-05",
+        "description": "Walk through the ancient ruins of Rome.",
+        "price": "$1700"
+      }
+    ]
+  }
+  

@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const trips = require('../../data/trips.json');
 
-// Define a route for the home page
+// Log the trips data to verify it's loading correctly
+console.log(trips);
+
 router.get('/', (req, res) => {
-    res.render('home'); // Adjust 'home' to match your HBS template name
+    res.render('home', { trips: trips.trips });
 });
 
 module.exports = router;

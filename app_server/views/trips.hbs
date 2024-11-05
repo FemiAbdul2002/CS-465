@@ -1,0 +1,12 @@
+<h1>Available Trips</h1>
+
+<ul>
+    {{#each trips}}
+    <li>
+        <h2>{{destination}}</h2>
+        <p>Date: {{date}}</p>
+        <p>Description: {{description}}</p>
+        <p>Price: {{price}}</p>
+    </li>
+    {{/each}}
+</ul>
