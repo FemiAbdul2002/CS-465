@@ -1,12 +1,19 @@
 const express = require('express');
 const router = express.Router();
-const trips = require('../../data/trips.json');
+const trips = require('../../data/trips.json'); // Ensure the correct path
 
-// Log the trips data to verify it's loading correctly
-console.log(trips);
+// Log trips data for debugging
+console.log('Loaded trips:', trips);
 
+// Handle the root route
 router.get('/', (req, res) => {
-    res.render('home', { trips: trips.trips });
+    try {
+        res.render('home', { trips: trips.trips });
+    } catch (error) {
+        console.error('Error rendering trips:', error);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 module.exports = router;
+
