@@ -1,7 +1,11 @@
 const express = require('express');
 const path = require('path');
 const trips = require('./data/trips.json');
+const apiRouter = require('./app_api/routes/trips');
 const app = express();
+
+app.use(express.json());
+app.use('/api', apiRouter);
 
 // Set up Handlebars (HBS) as the templating engine
 app.set('view engine', 'hbs');
@@ -21,3 +25,4 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
